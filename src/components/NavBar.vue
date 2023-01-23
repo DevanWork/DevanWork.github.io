@@ -5,10 +5,10 @@
 
       <b-collapse id="nav-collapse" is-nav>
         <b-navbar-nav>
-        <b-nav-item @click="setPage('Single')">Single Types</b-nav-item>
+        <!-- <b-nav-item @click="setPage('Single')">Single Types</b-nav-item>
         <b-nav-item @click="setPage('Dual')">Dual Types</b-nav-item>
         <b-nav-item @click="setPage('Tera')">Tera Types</b-nav-item>
-        <b-nav-item @click="setPage('About')">About</b-nav-item>
+        <b-nav-item @click="setPage('About')">About</b-nav-item> -->
         </b-navbar-nav>
       </b-collapse>
     </b-navbar>
