@@ -1,55 +1,86 @@
 <template>
-  <div>
-    <b-navbar type="dark" variant="dark">
-      <b-navbar-brand @click="setPage('About')">Pokemon Calculator</b-navbar-brand>
+  <div class="absolutePosition">
+    <b-card
+      img-src="https://media.discordapp.net/attachments/814022268400828446/1067218483928125510/Logo2.png?width=676&height=676"
+      img-alt="Logo"
+      img-top
+      tag="article"
+      style="width:250px;height250px;"
+      class="beep"
+    >
+        <b-nav vertical>
+          <div class="button-container-2">
+            <span class="mas">Home</span>
+            <button type="button" name="Hover" @click="setPage('HomePage')">Home</button>
+          </div>
+          <div class="button-container-2">
+            <span class="mas">About Me</span>
+            <button type="button" name="Hover" @click="setPage('AboutPage')">About Me</button>
+          </div>
+          <div class="button-container-2">
+            <span class="mas">Portfolio</span>
+            <button type="button" name="Hover" @click="setPage('PortfolioPage')">Portfolio</button>
+          </div>
+          <div class="button-container-2">
+            <span class="mas">Resumé</span>
+            <button type="button" name="Hover" @click="setPage('ResumePage')">Resumé</button>
+          </div>
+          <div class="button-container-2">
+            <span class="mas">BSU</span>
+            <button type="button" name="Hover" @click="setPage('BSUPage')">BSU</button>
+          </div>
+        </b-nav>
+    </b-card>
 
-      <b-collapse id="nav-collapse" is-nav>
-        <b-navbar-nav>
-        <!-- <b-nav-item @click="setPage('Single')">Single Types</b-nav-item>
-        <b-nav-item @click="setPage('Dual')">Dual Types</b-nav-item>
-        <b-nav-item @click="setPage('Tera')">Tera Types</b-nav-item>
-        <b-nav-item @click="setPage('About')">About</b-nav-item> -->
-        </b-navbar-nav>
-      </b-collapse>
-    </b-navbar>
-<!-- 
-    <AboutPage v-if="getPage() === 'About'" />
-    <SingleTypes v-if="getPage() === 'Single'" />
-    <DualTypes v-if="getPage() === 'Dual'" />
-    <TeraTypes v-if="getPage() === 'Tera'" /> -->
+    <HomePage v-if="getPage() === 'HomePage'" />
+    <AboutPage v-if="getPage() === 'AboutPage'" />
+    <PortfolioPage v-if="getPage() === 'PortfolioPage'" />
+    <ResumePage v-if="getPage() === 'ResumePage'" />
+    <BSUPage v-if="getPage() === 'BSUPage'" />
 
   </div>
 </template>
 
 <script>
-// import AboutPage from '@/components/AboutPage.vue'
-// import SingleTypes from '@/components/types/SingleTypes.vue'
-// import DualTypes from '@/components/types/DualTypes.vue'
-// import TeraTypes from '@/components/types/TeraTypes.vue'
+import HomePage from "@/components/pages/HomePage.vue"
+import AboutPage from "@/components/pages/AboutPage.vue"
+import PortfolioPage from "@/components/pages/PortfolioPage.vue"
+import ResumePage from "@/components/pages/ResumePage.vue"
+import BSUPage from "@/components/pages/BSUPage.vue"
 
 export default {
   name: "NavBar",
   data() {
-    return {
-      
-    };
+    return {};
   },
   components: {
-    // AboutPage,
-    // SingleTypes,
-    // DualTypes,
-    // TeraTypes
+    HomePage,
+    AboutPage,
+    PortfolioPage,
+    ResumePage,
+    BSUPage
   },
   methods: {
     setPage(x) {
         this.$store.commit('setPage', x);
     },
     getPage() {
+        console.log("current Page is " + this.$store.state.navbar.page);
         return this.$store.state.navbar.page;
-    },
+    }
   },
 };
 </script>
 
-<style>
+<style lang='scss' scoped>
+.beep {
+  background-color: #CBFFE6;
+  max-width: 15vw;
+  min-height: 100vh;
+  position: absolute;
+}
+.page {
+    margin-left: 15vw;
+}
+@import "@/styles/draw-button.scss";
 </style>
