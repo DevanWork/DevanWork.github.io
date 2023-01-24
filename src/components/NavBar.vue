@@ -8,7 +8,6 @@
       style="width:250px;height250px;"
       class="beep"
     >
-      <b-card-text>
         <b-nav vertical>
           <div class="button-container-2">
             <span class="mas">Home</span>
@@ -31,7 +30,6 @@
             <button type="button" name="Hover" @click="setPage('BSUPage')">BSU</button>
           </div>
         </b-nav>
-      </b-card-text>
     </b-card>
 
     <HomePage v-if="getPage() === 'HomePage'" />
@@ -81,10 +79,8 @@ export default {
   min-height: 100vh;
   position: absolute;
 }
-
 .page {
     margin-left: 15vw;
 }
-
 @import "@/styles/draw-button.scss";
 </style>
