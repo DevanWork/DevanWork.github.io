@@ -33,17 +33,43 @@
         </b-nav>
       </b-card-text>
     </b-card>
+
+    <HomePage v-if="getPage() === 'HomePage'" />
+    <AboutPage v-if="getPage() === 'AboutPage'" />
+    <PortfolioPage v-if="getPage() === 'PortfolioPage'" />
+    <ResumePage v-if="getPage() === 'ResumePage'" />
+    <BSUPage v-if="getPage() === 'BSUPage'" />
+
   </div>
 </template>
 
 <script>
+import HomePage from "@/components/pages/HomePage.vue"
+import AboutPage from "@/components/pages/AboutPage.vue"
+import PortfolioPage from "@/components/pages/PortfolioPage.vue"
+import ResumePage from "@/components/pages/ResumePage.vue"
+import BSUPage from "@/components/pages/BSUPage.vue"
+
 export default {
   name: "NavBar",
   data() {
     return {};
   },
-  components: {},
-  methods: {},
+  components: {
+    HomePage,
+    AboutPage,
+    PortfolioPage,
+    ResumePage,
+    BSUPage
+  },
+  methods: {
+    setPage(x) {
+        this.$store.commit('setPage', x);
+    },
+    getPage() {
+        return this.$store.state.navbar.page;
+    }
+  },
 };
 </script>
 
