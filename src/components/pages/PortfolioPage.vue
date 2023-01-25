@@ -5,29 +5,52 @@
         <h1>Portfolio</h1>
       </b-card-body>
         <b-card-body class="portfolio-body">
-          <b-card-title>Independent Work</b-card-title>
-          <b-card-sub-title class="mb-2">Jan 20 - Jan 22</b-card-sub-title>
+          <b-card-title>Background Design</b-card-title>
+          <b-card-text>
+            <img src="@/assets/portfolio/background_design_master/1_18_2023_background_studies_2.png" alt="Image" class="standardImage" />
+            <img src="@/assets/portfolio/background_design_master/1_18_2023_background_study.png" alt="Image" class="standardImage" />
+            <img src="@/assets/portfolio/background_design_master/1-4-2023_1_background_studies.png" alt="Image" class="standardImage" />
+          </b-card-text>
+
+          <b-card-title>Gesture Drawing</b-card-title>
           <b-card-text>
             <img src="@/assets/logo.png" alt="Image" />
             <img src="@/assets/logo.png" alt="Image" />
           </b-card-text>
 
-          <b-card-title>Boise State University</b-card-title>
-          <b-card-sub-title class="mb-2">Jan 20 - Jan 22</b-card-sub-title>
+          <b-card-title>Original Character Illustrations</b-card-title>
+          <b-card-sub-title class="mb-2">Aila</b-card-sub-title>
+          <b-card-text>
+            <img src="@/assets/logo.png" alt="Image" />
+            <img src="@/assets/logo.png" alt="Image" />
+          </b-card-text>
+          <b-card-sub-title class="mb-2">Claude</b-card-sub-title>
+          <b-card-text>
+            <img src="@/assets/logo.png" alt="Image" />
+            <img src="@/assets/logo.png" alt="Image" />
+          </b-card-text>
+          <b-card-sub-title class="mb-2">Extras</b-card-sub-title>
           <b-card-text>
             <img src="@/assets/logo.png" alt="Image" />
             <img src="@/assets/logo.png" alt="Image" />
           </b-card-text>
 
-          <b-card-title>Boise State University</b-card-title>
-          <b-card-sub-title class="mb-2">Jan 20 - Jan 22</b-card-sub-title>
+          <b-card-title>Mockups</b-card-title>
+          <img src="@/assets/logo.png" alt="Image" />
+          <b-card-sub-title class="mb-2">Tarot Deck</b-card-sub-title>
           <b-card-text>
             <img src="@/assets/logo.png" alt="Image" />
             <img src="@/assets/logo.png" alt="Image" />
           </b-card-text>
 
-          <b-card-title>Boise State University</b-card-title>
-          <b-card-sub-title class="mb-2">Jan 20 - Jan 22</b-card-sub-title>
+          <b-card-title>Sketch A Day</b-card-title>
+          <b-card-sub-title class="mb-2">Jan 2022</b-card-sub-title>
+          <b-card-text>
+            <img src="@/assets/logo.png" alt="Image" />
+            <img src="@/assets/logo.png" alt="Image" />
+          </b-card-text>
+
+          <b-card-title>Misc.</b-card-title>
           <b-card-text>
             <img src="@/assets/logo.png" alt="Image" />
             <img src="@/assets/logo.png" alt="Image" />
@@ -72,5 +95,11 @@ export default {
   text-align: center;
   background-color: #3ab67b;
   color: white;
+}
+
+.standardImage {
+    width: 20vw;
+    height: 20vh;
+    padding-right: 1vw;
 }
 </style>
