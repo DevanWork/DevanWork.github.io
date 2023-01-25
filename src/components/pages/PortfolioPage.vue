@@ -58,7 +58,7 @@
         </b-card-body>
 
       <b-card-footer class="portfolio-footer">
-        Devan J. Chaney ??SOCIAL MEDIA LINKS??
+        Copyright © 2023 DEVAN CHANEY, All rights reserved.
       </b-card-footer>
     </b-card>
   </div>
@@ -83,6 +83,7 @@ export default {
   text-align: center;
   background-color: #3ab67b;
   color: white;
+  min-height: 10vh;
   max-height: 10vh;
 }
 
