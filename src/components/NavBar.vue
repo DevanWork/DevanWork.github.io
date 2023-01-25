@@ -95,5 +95,6 @@ export default {
   margin-left: 13vw;
   max-width: 100%;
   min-height: 100vh;
+  font-family: 'Lato', sans-serif;
 }
 </style>

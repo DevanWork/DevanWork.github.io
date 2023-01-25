@@ -6,11 +6,10 @@
       </b-card-body>
 
       <b-card-body class="home-body">
-        <b-card-title
+        <b-card-title class="home-padding"
           >This site contains most information regarding Devan
           Chaney.</b-card-title
         >
-        <br><br>
         <b-card-text class="home-info">
         Here you will find: <br>» About Section <br>» Portfolio Showcasing
           Indepentdant Projects <br>» Up to Date Resume and Certificates <br>» Wide
@@ -67,5 +66,9 @@ export default {
 
 .home-info {
     font-size: 20px;
+}
+
+.home-padding {
+    margin-bottom: 5vh;
 }
 </style>
