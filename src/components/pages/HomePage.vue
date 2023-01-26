@@ -10,12 +10,15 @@
           >This site contains most information regarding Devan
           Chaney.</b-card-title
         >
-        <b-card-text class="home-info">
+        <b-card-text class="home-info home-padding">
         Here you will find: <br>» About Section <br>» Portfolio Showcasing
           Indepentdant Projects <br>» Up to Date Resume and Certificates <br>» Wide
           Range of Artifacts from the Gaming, Interactive Media, and Mobile
           Technology Major
         </b-card-text>
+
+        <img src="@/assets/Profile.png" alt="Devan Chaney" class="home-pic"/>
+
 
         <br><br>
 
@@ -70,5 +73,11 @@ export default {
 
 .home-padding {
     margin-bottom: 5vh;
+}
+
+.home-pic {
+  width: 20vw;
+  height: 47vh;
+  margin: auto;
 }
 </style>
