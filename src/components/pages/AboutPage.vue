@@ -14,7 +14,12 @@
         />
 
         <b-card-text class="about-info">
-          
+          Born in DC and raised in California, I am an aspiring artist that
+          strives to improve. I enjoy gaming, drawing and reading mangas in my
+          free time. My favorites include <br>» Games: Hades, Ooblets, Animal
+          Crossing New Horizons, League of Legends <br>» Animes: One Piece, Maoyu, Mob Psycho, Golden Boy <br>» Music: Doja Cat, Ashnikko, Ado, Hatsune
+          Miku <br>» Mangas: One Piece, Jujutsu Kaisen, Berserk, Under the Oak
+          Tree
         </b-card-text>
       </b-card-body>
 
@@ -53,6 +58,10 @@ export default {
   background-color: #cbffe6;
   overflow-y: auto;
   text-align: center;
+}
+
+.about-info {
+    font-size: 20px;
 }
 
 .about-footer {
