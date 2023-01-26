@@ -5,6 +5,7 @@
         <h1>Portfolio</h1>
       </b-card-body>
       <b-card-body class="portfolio-body">
+      <b-card-text style="text-align:center;">Please right click on an image and select "open image in new tab" to see each image in the best resolution.</b-card-text>
       <!-- Background Design -->
         <b-card-title>Background Design</b-card-title>
         <b-carousel

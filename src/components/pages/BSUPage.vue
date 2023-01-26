@@ -7,6 +7,7 @@
 
       <b-card-body class="bsu-body">
         <b-card-text class="bsu-subheader">Various Projects from Boise State University</b-card-text>
+        <b-card-text>Please right click on an image and select "open image in new tab" to see each image in the best resolution.</b-card-text>
         
         <!-- This is youtube video links carousel -->
         <b-card-sub-title>G.I.M.M. Projects?</b-card-sub-title>
@@ -84,6 +85,66 @@
 
           <b-carousel-slide
             img-src="@/assets/bsu/BouncingBall (1).gif"
+            class="carousel-img"
+          ></b-carousel-slide>
+
+        </b-carousel><br><br>
+
+        <b-card-sub-title>College of Innovation and Design Concepts/Projects</b-card-sub-title>
+        <b-carousel
+          id="carousel-design"
+          v-model="slide"
+          :interval="10000"
+          class="bsu-carousel"
+          controls
+          indicators
+          background="#cbffe6"
+          @sliding-start="onSlideStart"
+          @sliding-end="onSlideEnd"
+        >
+          <!-- Text slides with image -->
+          <b-carousel-slide
+            img-src="@/assets/bsu/design_concepts/COID331_Project_1_Logo.png"
+            class="carousel-img"
+          ></b-carousel-slide>
+          <b-carousel-slide
+            img-src="@/assets/bsu/design_concepts/DragonFoodBanner.png"
+            class="carousel-img"
+          ></b-carousel-slide>
+          <b-carousel-slide
+            img-src="@/assets/bsu/design_concepts/MailChimp.png"
+            class="carousel-img"
+          ></b-carousel-slide>
+
+        </b-carousel><br><br>
+
+        <b-card-sub-title>App concepts</b-card-sub-title>
+        <b-carousel
+          id="carousel-concepts"
+          v-model="slide"
+          :interval="10000"
+          class="bsu-carousel"
+          controls
+          indicators
+          background="#cbffe6"
+          @sliding-start="onSlideStart"
+          @sliding-end="onSlideEnd"
+        >
+          <!-- Text slides with image -->
+          <b-carousel-slide
+            img-src="@/assets/bsu/app_concepts/ImpactProjectSketches_DevanC.png"
+            class="carousel-img"
+          ></b-carousel-slide>
+          <b-carousel-slide
+            img-src="@/assets/bsu/app_concepts/Prototype1.png"
+            class="carousel-img"
+          ></b-carousel-slide>
+          <b-carousel-slide
+            img-src="@/assets/bsu/app_concepts/unknown (1).png"
+            class="carousel-img"
+          ></b-carousel-slide>
+          <b-carousel-slide
+            img-src="@/assets/bsu/app_concepts/unknown.png"
             class="carousel-img"
           ></b-carousel-slide>
 
