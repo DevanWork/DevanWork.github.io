@@ -49,6 +49,7 @@
     <ResumePage v-if="getPage() === 'ResumePage'" />
     <BSUPage v-if="getPage() === 'BSUPage'" />
   </div>
+  <!--  -->
 </template>
 
 <script>
