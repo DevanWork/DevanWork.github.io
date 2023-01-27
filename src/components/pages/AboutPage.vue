@@ -14,15 +14,12 @@
         />
 
         <b-card-text class="about-info">
-          Lorem Ipsum is simply dummy text of the printing and typesetting
-          industry. Lorem Ipsum has been the industry's standard dummy text ever
-          since the 1500s, when an unknown printer took a galley of type and
-          scrambled it to make a type specimen book. It has survived not only
-          five centuries, but also the leap into electronic typesetting,
-          remaining essentially unchanged. It was popularised in the 1960s with
-          the release of Letraset sheets containing Lorem Ipsum passages, and
-          more recently with desktop publishing software like Aldus PageMaker
-          including versions of Lorem Ipsum.
+          Born in DC and raised in California, I am an aspiring artist that
+          strives to improve. I enjoy gaming, drawing and reading mangas in my
+          free time. My favorites include <br>» Games: Hades, Ooblets, Animal
+          Crossing New Horizons, League of Legends <br>» Animes: One Piece, Maoyu, Mob Psycho, Golden Boy <br>» Music: Doja Cat, Ashnikko, Ado, Hatsune
+          Miku <br>» Mangas: One Piece, Jujutsu Kaisen, Berserk, Under the Oak
+          Tree
         </b-card-text>
       </b-card-body>
 
@@ -61,6 +58,10 @@ export default {
   background-color: #cbffe6;
   overflow-y: auto;
   text-align: center;
+}
+
+.about-info {
+    font-size: 20px;
 }
 
 .about-footer {

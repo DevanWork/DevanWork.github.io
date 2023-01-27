@@ -9,6 +9,7 @@
         <b-card-text class="resume-subheader"
           >Resume and Certificaitons</b-card-text
         >
+        <b-card-text>Please right click on an image and select "open image in new tab" to see each image in the best resolution.</b-card-text>
         <b-carousel
           id="carousel-1"
           v-model="slide"
