@@ -932,10 +932,7 @@
             img-src="@/assets/portfolio/sketch_a_day/jan_2023/12.gif"
             class="carousel-img"
           ></b-carousel-slide>
-          <!-- <b-carousel-slide
-            img-src="@/assets/portfolio/sketch_a_day/jan_2023/13.png"
-            class="carousel-img"
-          ></b-carousel-slide> -->
+
           <b-carousel-slide
             img-src="@/assets/portfolio/sketch_a_day/jan_2023/14.png"
             class="carousel-img"
@@ -960,12 +957,7 @@
             img-src="@/assets/portfolio/sketch_a_day/jan_2023/19.gif"
             class="carousel-img"
           ></b-carousel-slide>
-          <!-- <b-carousel-slide
-            img-src="@/assets/portfolio/sketch_a_day/jan_2023/20.png"
-            class="carousel-img"
-          ></b-carousel-slide>
-          -->
-          
+                  
 
           </b-carousel>
         </b-card-text>
