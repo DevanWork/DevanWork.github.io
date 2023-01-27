@@ -18,11 +18,7 @@ vue: {
 
 const { defineConfig } = require('@vue/cli-service')
 module.exports = defineConfig({
-  transpileDependencies: true
+  transpileDependencies: true,
+  publicPath: '/devan-portfolio/'
 })
 
-module.exports = {
-  publicPath: process.env.NODE.ENV === 'production'
-    ? '/'
-    : '/'
-}
